@@ -2,8 +2,6 @@
 
 This package adds and controllability interface to the gazebo simulation. With this package the avant simulation model can be sent messages and they will moved to the model.
 
-This package will mimic the [hw_interface](https://github.com/tau-alma/avant_ros/tree/main/hw_interface) node so that running simulations with the avant would be possible. 
-
 with this interface it is possible to control the movement of the model. Over the topic /motion_controller/commands the interface listens the commands
 
 which come as JointState commands in form of:
@@ -31,24 +29,8 @@ ros2 topic pub /manipulator_commands sensor_msgs/msg/JointState "{name: ['boom',
 
 ## To run and install needed files
 
-This package is used with avant description package which launches this package when needed. To see how to run and please read
-the README file in following: 
-
-[avant description](https://github.com/tau-alma/avant_ros/tree/avant_simulation/avant_description)
+This package is used with avant description package which launches this package when needed.: 
 
 There you can find commands which will instruct how to run each controller mode and how the simulation is started!
 
 
-### Depencies
-
-To run this file you will need to have installed the ros2 galactic, rviz2 and gazebo 
-environments. 
-
-To install all depencies please follow instructions in the following git repo:
-
-[avant description](https://github.com/tau-alma/avant_ros/tree/avant_simulation/avant_description)
-
-
-### Link to the issue
-
-[Issue](https://github.com/tau-alma/peams-planning/issues/45)
